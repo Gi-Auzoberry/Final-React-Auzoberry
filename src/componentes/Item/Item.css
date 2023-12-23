@@ -11,15 +11,17 @@
     height: 30rem;
 }
 
-.itemCard button {
+.itemCard .button {
     padding: 5px;
     border: solid #8c6856 .5px;
     border-radius: 10px;
     color: #8c6856;
     background-color: #dcc8b9;
+    text-decoration: none;
+
 }
 
-.itemCard button:hover{
+.itemCard .button:hover{
     border: solid #9badb2 .5px;
     color: #9badb2;
     background-color: #c4cfd6;

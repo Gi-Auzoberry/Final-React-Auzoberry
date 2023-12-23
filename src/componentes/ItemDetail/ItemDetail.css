@@ -1,0 +1,15 @@
+.contenedorDetalle{
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: #9badb2;
+    border-radius: 30px;
+}
+
+.contenedorDetalle img {
+    width: 30rem;
+}
+
+.colorDetalle {
+    color: #faeee5;
+}

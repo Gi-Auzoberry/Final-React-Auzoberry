@@ -1,15 +1,21 @@
-import './NavBar.css';
+import { Link, NavLink } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
+import './NavBar.css';
 
 const NavBar = () => {
   return (
     <header>
+      <Link className='logo' to="/">
         <h1>The Petkery</h1>
+      </Link>
+
         <nav>
             <ul>
-                <li>Quienes Somos</li>
-                <li>Productos</li>
-                <li>Contacto</li>
+                <li><NavLink className="li" to="/About">Quienes Somos</NavLink></li>
+                <li><NavLink className="li" to="categoria/Tortas">Tortas</NavLink></li>
+                <li><NavLink className="li" to="categoria/Cupcakes">Cupcakes</NavLink></li>
+                <li><NavLink className="li" to="categoria/Treats">Treats</NavLink></li>
+                <li><NavLink className="li" to="/Contacto">Contacto</NavLink></li>
             </ul>
         </nav>
         <CartWidget/>
@@ -17,4 +23,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBar 

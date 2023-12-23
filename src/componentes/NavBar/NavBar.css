@@ -8,13 +8,17 @@ header {
     box-shadow: 0 0 10px rgba(140, 104, 86, 0.8);
 }
 
+
 header li {
     display: inline-block;
     padding: 15px;
-    cursor: pointer;
     font-weight: 600;
 }
+.li, .logo{
+    text-decoration: none;
+    color: #faeee5;
+}
 
-header li:hover {
+header .li:hover {
     color: #9badb2;
 }
