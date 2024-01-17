@@ -1,0 +1,21 @@
+.contador {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 5px;
+    color: #faeee5;
+}
+
+button {
+    padding: 5px;
+    color: #8c6856;
+    background-color: #dcc8b9;
+    border: 1px solid #8C6856;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-contador:hover {
+    background-color: #faeee5;
+}

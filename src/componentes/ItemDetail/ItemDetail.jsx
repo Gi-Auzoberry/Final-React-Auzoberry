@@ -22,7 +22,7 @@ const ItemDetail = ({nombre, img, descripcion, precio}) => {
         <p className='colorDetalle' > Precio: ${precio} </p>
 
         {
-          agregarCant > 0 ? (<Link to= "/cart">Finalizar Compra</Link>) : (<ItemCount agregar={handleCant} />)
+          agregarCant > 0 ? (<Link className="btn-finalizar" to= "/cart">Finalizar Compra</Link>) : (<ItemCount agregar={handleCant} />)
         }
 
     </div>
