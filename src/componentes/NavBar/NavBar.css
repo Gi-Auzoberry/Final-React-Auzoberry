@@ -14,7 +14,10 @@ header li {
     padding: 15px;
     font-weight: 600;
 }
-.li, .logo{
+.logo img {
+    width: 8rem;
+}
+.li {
     text-decoration: none;
     color: #faeee5;
 }

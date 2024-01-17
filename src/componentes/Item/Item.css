@@ -6,8 +6,6 @@
     margin: 20px;
     padding: 20px;
     gap: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius:  40px;
     color: #8c6856;
 }
 
@@ -37,4 +35,7 @@
 
 .itemCard:hover{
     border: 1.5px solid #8c6856;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius:  40px;
+
 }
