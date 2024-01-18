@@ -6,7 +6,7 @@ import { collection, addDoc } from "firebase/firestore";
 
 const Checkout = () => {
 
-    const { carrito, vaciarCarrito } = useContext(CarritoContext)
+    const { carrito, vaciarCarrito, total, totalProductos } = useContext(CarritoContext)
 
     const [nombre, setNombre] = useState("")
     const [apellido, setApellido] = useState("")
@@ -16,10 +16,48 @@ const Checkout = () => {
     const [ordenId, setOrdenId] = useState("")
     const [error, setError] = useState("")
 
+    const handleForm = (e) => {
+        e.preventDefault();
+
+        if(!nombre || !apellido || !tel || !mail || !mailConfirm) {
+            setError("Por favor, completa todos los campos")
+            return;
+        }
+        if(mail !== mailConfirm) {
+            setError("El correo electrónico no coincide, ingresalo nuevamente")
+            return;
+        }
+
+        const orden = {
+            items: carrito.map( producto => ({
+                id: producto.item.id,
+                nombre: producto.item.nombre,
+                cantidad: producto.cantidad
+            })),
+            total: total,
+            fecha: new Date(),
+            nombre,
+            apellido,
+            tel,
+            mail
+        }
+
+        addDoc(collection(db, "orders"), orden)
+            .then(docRef => {
+                setOrdenId(docRef.id)
+                vaciarCarrito
+            })
+            .catch(error => {
+                setError("No pudimos procesar tu orden, por favor revisa el código")
+            })
+
+
+    }
+
     return (
         <div>
             <h2> Checkout </h2>
-            <form>
+            <form onSubmit={handleForm}>
                 {carrito.map(producto => (
                     <div key={producto.item.id}>
                         <p> {producto.item.nombre} x {producto.cantidad} </p>
