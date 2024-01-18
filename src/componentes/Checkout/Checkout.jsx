@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import { CarritoContext } from "../../context/CarritoContext";
 import { db } from '../../services/config';
 import { collection, addDoc } from "firebase/firestore";
