@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-// import { getProductos, getProductosCategoria } from '../../asyncmock';
 import { db } from '../../services/config';
 import { collection, getDocs, where, query } from 'firebase/firestore';
 import ItemList from '../ItemList/ItemList';
@@ -25,13 +24,6 @@ const ItemListContainer = ({ greeting }) => {
         setProductos(nuevoProductos);
       })
   }, [idCategoria])
-
-  /*useEffect (() => {
-    const verCategoria= idCategoria ? getProductosCategoria : getProductos
-    verCategoria(idCategoria)
-      .then(respuesta => setProductos(respuesta))
-  }, [idCategoria])
-  */
 
   return (
     <div className='contenedorCards'>

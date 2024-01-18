@@ -18,8 +18,8 @@ const App = () => {
             <Route path="/" element={<ItemListContainer greeting="Bienvenidos a la tienda online de The Petkery!" />} />
             <Route path="/categoria/:idCategoria" element={<ItemListContainer greeting="Bienvenidos a la tienda online de The Petkery!" />} />
             <Route path="/item/:idItem" element={<ItemDetailContainer />} />
-            <Route path="/cart" element={< Cart/>} />
-            <Route path="/checkout" element={<Checkout/>} />
+            <Route path="/cart" element={< Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<h2>Página momentaneamente no disponible 🥲</h2>} />
           </Routes>
         </CarritoProvider>
