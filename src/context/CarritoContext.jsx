@@ -2,19 +2,14 @@ import { useState, createContext } from "react";
 
 export const CarritoContext = createContext({
     carrito: [],
-    total: 0,
-    totalProductos: 0
+    totalProductos: 0,
+    total: 0
 })
 
 export const CarritoProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([]);
     const [totalProductos, setTotalProductos] = useState(0);
     const [total, setTotal] = useState(0);
-
-    // ESTO LO SACARE LUEGO!
-    console.log(carrito);
-    console.log( `total productos: ${totalProductos}` )
-    console.log( `Precio total $${total}` )
 
     const addCarrito = (item, cantidad) => {
         const yaAgregado = carrito.find(prod => prod.item.id === item.id)
