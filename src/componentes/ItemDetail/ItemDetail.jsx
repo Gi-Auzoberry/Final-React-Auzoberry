@@ -26,6 +26,7 @@ const ItemDetail = ({ id, nombre, img, descripcion, precio, stock }) => {
 
       {agregarCant > 0 ? (<Link className="btn-finalizar" to="/cart">Finalizar Compra</Link>) : (<ItemCount stock={stock} agregar={handleCant} />)}
 
+      <p className='stock-disponible'>Stock Disponible: {stock} </p>
     </div>
   )
 }

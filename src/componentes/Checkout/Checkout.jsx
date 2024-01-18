@@ -34,6 +34,7 @@ const Checkout = () => {
                 nombre: producto.item.nombre,
                 cantidad: producto.cantidad
             })),
+            productos: totalProductos,
             total: total,
             fecha: new Date(),
             nombre,

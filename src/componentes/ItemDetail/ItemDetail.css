@@ -12,8 +12,12 @@
 
 .colorDetalle {
     color: #faeee5;
+    padding: .5rem;
 }
-
+.stock-disponible{
+    color: #faeee5;
+    font-size: 10px;
+}
 .btn-finalizar{
     color: #8c6856;
     font-weight: 600;
