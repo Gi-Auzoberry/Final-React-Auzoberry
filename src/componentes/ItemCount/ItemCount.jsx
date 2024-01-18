@@ -2,14 +2,12 @@ import { useState } from "react";
 import './ItemCount.css';
 
 
-const ItemCount = ({ agregar }) => {
+const ItemCount = ({ stock, agregar }) => {
 
     const [contador, setContador] = useState(1);
 
-    let stockDisponible = 15;
-
     const incrementar = () => {
-        if (contador < stockDisponible) {
+        if (contador < stock) {
             setContador(contador + 1);
         }
     }

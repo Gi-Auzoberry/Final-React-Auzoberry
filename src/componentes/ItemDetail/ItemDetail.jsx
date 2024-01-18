@@ -4,12 +4,11 @@ import { CarritoContext } from '../../context/CarritoContext';
 import ItemCount from '../ItemCount/ItemCount';
 import './ItemDetail.css';
 
-const ItemDetail = ({ id, nombre, img, descripcion, precio }) => {
+const ItemDetail = ({ id, nombre, img, descripcion, precio, stock }) => {
 
   const [agregarCant, setAgregarCant] = useState(0);
 
   const { addCarrito } = useContext(CarritoContext);
-
 
   const handleCant = (cantidad) => {
     setAgregarCant(cantidad);
@@ -25,9 +24,7 @@ const ItemDetail = ({ id, nombre, img, descripcion, precio }) => {
       <p className='colorDetalle' > {descripcion} </p>
       <p className='colorDetalle' > Precio: ${precio} </p>
 
-      {
-        agregarCant > 0 ? (<Link className="btn-finalizar" to="/cart">Finalizar Compra</Link>) : (<ItemCount agregar={handleCant} />)
-      }
+      {agregarCant > 0 ? (<Link className="btn-finalizar" to="/cart">Finalizar Compra</Link>) : (<ItemCount stock={stock} agregar={handleCant} />)}
 
     </div>
   )
