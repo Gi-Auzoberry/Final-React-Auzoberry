@@ -19,17 +19,17 @@ const Checkout = () => {
     const handleForm = (e) => {
         e.preventDefault();
 
-        if(!nombre || !apellido || !tel || !mail || !mailConfirm) {
+        if (!nombre || !apellido || !tel || !mail || !mailConfirm) {
             setError("Por favor, completa todos los campos")
             return;
         }
-        if(mail !== mailConfirm) {
+        if (mail !== mailConfirm) {
             setError("El correo electrónico no coincide, ingresalo nuevamente")
             return;
         }
 
         const orden = {
-            items: carrito.map( producto => ({
+            items: carrito.map(producto => ({
                 id: producto.item.id,
                 nombre: producto.item.nombre,
                 cantidad: producto.cantidad
@@ -38,20 +38,18 @@ const Checkout = () => {
             fecha: new Date(),
             nombre,
             apellido,
-            tel,
+            telefono: tel,
             mail
         }
 
         addDoc(collection(db, "orders"), orden)
             .then(docRef => {
                 setOrdenId(docRef.id)
-                vaciarCarrito
+                vaciarCarrito()
             })
             .catch(error => {
                 setError("No pudimos procesar tu orden, por favor revisa el código")
             })
-
-
     }
 
     return (
