@@ -6,7 +6,7 @@ const Item = ({ id, nombre, precio, img, stock}) => {
     <div className='itemCard'>
       <img src={img} alt={nombre} />
       <h4> {nombre} </h4>
-      <p>Precio: ${precio}</p>
+      <p className='lpm'>Precio: ${precio}</p>
       <Link className='button' to={`/item/${id}`} > Ver Detalles </Link>
     </div>
   )

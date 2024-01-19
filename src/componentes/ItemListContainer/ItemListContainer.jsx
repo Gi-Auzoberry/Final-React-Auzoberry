@@ -28,6 +28,7 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <div className='contenedorCards'>
       <h2> {greeting} </h2>
+      <h4>Nuestros Productos {idCategoria ? ': ' + idCategoria : ''}</h4>
       <ItemList productos={productos} />
     </div>
   )

@@ -1,4 +1,5 @@
 .contenedorDetalle{
+    position: relative;
     margin: 30px;
     padding: 10px;
     text-align: center;
@@ -14,6 +15,13 @@
     color: #faeee5;
     padding: .5rem;
 }
+
+.volver img {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    width: 20px;
+}
 .stock-disponible{
     color: #faeee5;
     font-size: 10px;
@@ -21,5 +29,4 @@
 .btn-finalizar{
     color: #8c6856;
     font-weight: 600;
-
 }

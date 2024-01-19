@@ -1,0 +1,65 @@
+#img-emptycart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45rem;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+#btn-agregarcart {
+    color: #9badb2;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 25px;
+    padding: 20px;
+}
+
+#contenedor-cart {
+    position: relative;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: #8c685670;
+    border: 1px solid #8C6856;
+    border-radius: 50px;
+}
+
+#titulo-carrito {
+    padding: 10px;
+    color: #faeee5;
+    font-size: 25px;
+}
+
+#contenedor-cart .p-cart, .btn-vaciar {
+    margin-top: 10px;
+}
+
+.btns-link {
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.btns-link .finalizar-compra {
+    text-decoration: none;
+    padding: 10px;
+    border: .5px solid #faeee5;
+    color: #faeee5;
+    background-color: #8C6856;
+    border-radius: 10px;
+}
+
+.btns-link .mas-productos {
+    padding: 10px;
+    color: #faeee5;
+}
+
+/* #faeee5 clarito
+   #8C6856 oscuro
+   #9badb2 celeste
+*/

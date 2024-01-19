@@ -1,0 +1,13 @@
+.contenedor-item{
+    position: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:.5px solid #8C6856 ;
+    padding: 20px;
+    margin: 0 100px;
+}
+
+.contenedor-item h3, p {
+   color: #faeee5;
+}
+
