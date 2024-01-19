@@ -69,7 +69,7 @@ const Checkout = () => {
                     <div id="orden-de-compra">
                         {carrito.map(producto => (
                             <div key={producto.item.id} id="checkout">
-                                <img src={producto.item.img} alt="fotito" />
+                                <img src={producto.item.img} alt="fotito" className="img-checkout"/>
                                 <p> {producto.item.nombre} x {producto.cantidad} </p>
                                 <p> Precio: $ {producto.item.precio} </p>
                             </div>

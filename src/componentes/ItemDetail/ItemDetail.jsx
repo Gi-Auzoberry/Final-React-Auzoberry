@@ -13,7 +13,7 @@ const ItemDetail = ({ id, nombre, img, descripcion, precio, stock }) => {
   const handleCant = (cantidad) => {
     setAgregarCant(cantidad);
 
-    const item = { id, nombre, precio }
+    const item = { id, nombre, precio, img }
     addCarrito(item, cantidad);
   }
 
