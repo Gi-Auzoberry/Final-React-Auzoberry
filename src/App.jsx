@@ -5,7 +5,9 @@ import NavBar from "./componentes/NavBar/NavBar";
 import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
 import Cart from "./componentes/Cart/Cart";
 import Checkout from "./componentes/Checkout/Checkout";
+import Footer from "./componentes/Footer/Footer";
 import './App.css';
+
 
 
 const App = () => {
@@ -22,6 +24,7 @@ const App = () => {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<h2>Página momentaneamente no disponible 🥲</h2>} />
           </Routes>
+          <Footer />
         </CarritoProvider>
       </BrowserRouter>
     </div>

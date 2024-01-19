@@ -1,0 +1,33 @@
+footer .contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10rem;
+    padding: 20px;
+    background-color: #dcc8b9;
+    color: #faeee5;
+    box-shadow: 0 0 10px rgba(140, 104, 86, 0.8);
+}
+
+footer .contenedor-footer .logo2 img {
+    width: 5rem;
+}
+
+footer .contenedor-footer h4 {
+    color: #8C6856;
+}
+
+footer .bottom {
+    padding: 5px;
+    text-align: center;
+    background-color: #8C6856;
+    color: #faeee5;
+    font-size: 12px;
+}
+
+footer .contenedor-footer .redes-sociales .rrss-icon {
+    width: 30px;
+    padding: 5px;
+    color: #faeee5;
+    cursor: pointer;
+}
