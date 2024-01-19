@@ -100,17 +100,15 @@ const Checkout = () => {
                     {error && <h4> {error} </h4>}
 
                     <button type="submit" id="submit"> Finalizar Compra </button>
-               </div>
-
-
+                </div>
             </form>
 
             {ordenId && (
-                        <div id="orden-fin">
-                            <img src="../img/gatito cumple.jpeg" alt="Gatito festejando su cumpleaños" id="michi-cumple"/>
-                            <p id="grax"> ¡Muchas gracias por tu compra! <br/> El número de orden es: {ordenId} </p>
-                        </div>
-                    )}
+                <div id="orden-fin">
+                    <img src="../img/gatito cumple.jpeg" alt="Gatito festejando su cumpleaños" id="michi-cumple" />
+                    <p id="grax"> ¡Muchas gracias por tu compra! <br /> El número de orden es: {ordenId} </p>
+                </div>
+            )}
         </>
     )
 }

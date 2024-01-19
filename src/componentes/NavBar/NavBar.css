@@ -1,24 +1,28 @@
-header { 
+header {
     background-color: #dcc8b9;
     color: #faeee5;
-    padding: 20px ;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(140, 104, 86, 0.8);
 }
+
 header li {
     display: inline-block;
     padding: 15px;
     font-weight: 600;
 }
+
 .logo img {
     width: 8rem;
 }
+
 .li {
     text-decoration: none;
     color: #faeee5;
 }
+
 header .li:hover {
     color: #9badb2;
 }

@@ -1,6 +1,7 @@
 footer {
     margin-top: auto;
 }
+
 footer .contenedor-footer {
     display: flex;
     justify-content: space-around;
