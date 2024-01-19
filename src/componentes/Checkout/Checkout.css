@@ -36,7 +36,22 @@ input {
     margin-top: auto;
 }
 
-/* #faeee5 clarito
-   #8C6856 oscuro
-   #9badb2 celeste
-*/
+#orden-fin {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#orden-fin #michi-cumple{
+    display: block;
+    height: 30rem;
+    border-radius: 50px;
+}
+
+#orden-fin #grax {
+    color: #9badb2;
+    font-weight: 400;
+}
