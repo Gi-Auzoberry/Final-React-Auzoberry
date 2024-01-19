@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { CarritoContext } from "../../context/CarritoContext";
 import { db } from '../../services/config';
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, getDoc, updateDoc } from "firebase/firestore";
 import './Checkout.css';
 
 
@@ -69,7 +69,7 @@ const Checkout = () => {
                     <div id="orden-de-compra">
                         {carrito.map(producto => (
                             <div key={producto.item.id} id="checkout">
-                                <img src={producto.item.img} alt="fotito" className="img-checkout"/>
+                                <img src={producto.item.img} alt="fotito" className="img-checkout" />
                                 <p> {producto.item.nombre} x {producto.cantidad} </p>
                                 <p> Precio: $ {producto.item.precio} </p>
                             </div>

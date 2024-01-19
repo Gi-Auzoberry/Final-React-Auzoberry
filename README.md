@@ -1,8 +1,44 @@
-# React + Vite
+# The Petkery - Proyecto de Ecommerce
+Este proyecto es una aplicación de ecommerce desarrollada como parte del curso de React en Coderhouse. Aunque el cliente, "The Petkery", es real, la página creada es puramente para fines educativos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tecnologías utilizadas
+- React
+- Vite
+- React Router
+- Node
+- Firebase
 
-Currently, two official plugins are available:
+## Funcionalidades
+La aplicación ofrece las siguientes funcionalidades básicas:
+- **Visualización de Productos**: Los usuarios pueden ver una lista de productos disponibles para la compra.
+- **Agregar Productos al Carrito de Compras**: Los usuarios pueden seleccionar productos y agregarlos a su carrito de compras.
+- **Ver el Carrito de Compras**: Los usuarios pueden ver los productos que han agregado a su carrito de compras.
+- **Simulación de Compra en Línea**: Los usuarios pueden finalizar la simulación de venta generando una orden de compra.
+- **Almacenamiento de Datos en Firebase**: Todos los productos y las órdenes de compra se almacenan en Firebase, permitiendo una persistencia de datos eficiente y en tiempo real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalación
+1. Clona el repositorio
+```bash
+  git clone https://github.com/Gi-Auzoberry/Final-React-Auzoberry
+```
+2. Dirígete al directorio del proyecto
+```bash
+  cd my-project
+```
+3. Instala dependencias y módulos
+```bash
+  npm install
+```
+4. Start the server ✨
+```bash
+  npm run dev
+```
+
+## Nota
+Aunque "The Petkery" es un cliente real, esta página fue creada únicamente con fines educativos como parte del curso de React en Coderhouse. Por favor, no la consideres como el sitio web oficial de "The Petkery".
+
+## Autores
+[@gi-auzoberry](https://github.com/Gi-Auzoberry)
+
+## Licecia
+Este proyecto esta licenciado bajo la Licencia MIT. 
