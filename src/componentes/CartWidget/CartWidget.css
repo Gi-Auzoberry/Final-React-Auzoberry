@@ -1,3 +1,10 @@
 .carrito {
     width: 2rem;
 }
+
+#total-prod {
+    text-align: center;
+    background-color: #9badb2;
+    border-radius: 100px;
+    font-size: 15px;
+}

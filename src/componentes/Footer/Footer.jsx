@@ -17,9 +17,9 @@ const Footer = () => {
 
                 <div className='redes-sociales'>
                     <h4>Siguenos</h4>
-                    <img  className='rrss-icon' src="./img/whatsapp.png" alt="WhatsApp logo"/>
-                    <img  className='rrss-icon' src="./img/kakao-talk.png" alt="KakaoTalk logo"/>
-                    <img  className='rrss-icon' src="./img/facebook.png" alt="Facebook logo"/>
+                    <img  className='rrss-icon' src="../img/whatsapp.png" alt="WhatsApp logo"/>
+                    <img  className='rrss-icon' src="../img/kakao-talk.png" alt="KakaoTalk logo"/>
+                    <img  className='rrss-icon' src="../img/facebook.png" alt="Facebook logo"/>
                 </div>
             </div>
             
