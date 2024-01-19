@@ -49,12 +49,13 @@ const Checkout = () => {
             .then(docRef => {
                 setOrdenId(docRef.id)
                 vaciarCarrito()
-                setNombre("");
-                setApellido("");
-                setTel("");
-                setMail("");
-                setMailConfirm("");
-                setMostrarOrden(false);
+                setNombre("")
+                setApellido("")
+                setTel("")
+                setMail("")
+                setMailConfirm("")
+                setError("")
+                setMostrarOrden(false)
             })
             .catch(error => {
                 setError("No pudimos procesar tu orden, por favor revisa el código")
