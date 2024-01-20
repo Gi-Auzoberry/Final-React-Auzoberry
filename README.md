@@ -23,7 +23,7 @@ La aplicación ofrece las siguientes funcionalidades básicas:
 ```
 2. Dirígete al directorio del proyecto
 ```bash
-  cd my-project
+  cd final-react-auzoberry
 ```
 3. Instala dependencias y módulos
 ```bash
