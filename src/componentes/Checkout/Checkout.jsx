@@ -75,6 +75,9 @@ const Checkout = () => {
                                 <p> Precio: $ {producto.item.precio} </p>
                             </div>
                         ))}
+                        <div id="total-checkout">
+                            <p>Total: {total} </p>
+                        </div>
                     </div>
                 )}
 

@@ -19,6 +19,10 @@
     width: 3rem;
 }
 
+#orden-de-compra #total-checkout p {
+    color: #8C6856;
+}
+
 #checkout p {
     color: #8C6856;
 }
